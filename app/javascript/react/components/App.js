@@ -1,7 +1,16 @@
 import React from 'react'
+import SiteHeader from './site_header'
+import SiteExplanation from './site_explanation'
+import ContactPage from './contact_page';
 
 export const App = (props) => {
-  return (<h1>Make It So React</h1>)
+  return (
+    <div className="app">
+      <SiteHeader/>
+      <SiteExplanation/>
+      <ContactPage/>
+    </div>
+  )
 }
 
 export default App
