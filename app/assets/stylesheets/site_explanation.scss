@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     background-color: #474B4F;
+    font-family: 'Roboto', ;
 
 
     &-title {
@@ -14,7 +15,7 @@
     &-blurb {
         justify-content: center;
         display: flex;
-        padding: 24px 150px;
+        padding: 24px 50px;
         color: #FFFFFF;
     }
 }
