@@ -9,45 +9,42 @@ const ContactPage = () => {
 
   return (
     <div className="ContactPage">
-      <h3>Lets start a conversation!</h3>
+      <div className="ContactPage-intro">
+        <h3>Lets start a conversation!</h3>
+      </div>
       <form>
-        <label className="ContactPage-label">
-          First Name:{' '}
-          <input
-            value={firstName}
-            onChange={e => setFirstName(e.target.value)}
-            type="text"
-          />
-        </label>
-
-        <label className="ContactPage-label">
-          Last Name:{' '}
-          <input
-            value={lastName}
-            onChange={e => setLastName(e.target.value)}
-            type="text"
-          />
-        </label>
-
-        <label className="ContactPage-label">
-          Email
-          <input
-            value={email}
-            onChange={e => setEmail(e.target.value)}
-            type="text"
-          />
-        </label>
-
-        <label className="ContactPage-label">
-          Message:
-          <input
-            value={message}
-            onChange={e => setMessage(e.target.value)}
-            type="text"
-          />
-        </label>
-
-        <input type="submit" />
+        <div className="ContactPage-form">
+          <div className="ContactPage-firstInputs">
+            <input
+              placeholder="First Name"
+              className="ContactPage-input"
+              value={firstName}
+              onChange={e => setFirstName(e.target.value)}
+              type="text"
+            />
+            <input
+              placeholder="Last Name"
+              className="ContactPage-input"
+              value={lastName}
+              onChange={e => setLastName(e.target.value)}
+              type="text"
+            />
+            <input
+              placeholder="Email"
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+              type="text"
+            />
+          </div>
+          <div className="ContactPage-messageInput">
+            <textarea
+              placeholder="Message"
+              value={message}
+              onChange={e => setMessage(e.target.value)}
+            />
+          </div>
+        </div>
+        <input className="ContactPage-submit" type="submit" />
       </form>
     </div>
   );
