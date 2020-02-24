@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.MySkills {
+  background-color: #222629;
+  color: white;
+  margin-bottom: 0px;
+  font-family: 'Roboto', sans-serif;
+  &-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  &-frontend {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  &-backend {
+    width: 50%;
+    padding-right: 20px
+  }
+  &-skillAndDescription {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-proficientProgress, &-advancedProgress, &-intermediateProgress {
+    width: 100%;
+    background-color: grey;
+  }
+  &-proficientProgressBar {
+    width: 90%;
+    height: 30px;
+    background-color: green;
+  }
+  &-advancedProgressBar {
+    width: 75%;
+    height: 30px;
+    background-color: green;
+    animation: g 2500ms infinite ease-in-out, r 3000ms infinite cubic-bezier(0.5, 0.5, 0.5, 0.5);
+  }
+  &-intermediateProgressBar {
+    width: 60%;
+    height: 30px;
+    background-color: green;
+  }
+  ul {
+    // To get rid of the white margin at the bottom
+    margin-bottom: 0px;
+  }
+  li {
+    font-size: 15px;
+  }
+}
