@@ -11,14 +11,20 @@ const SiteHeader = () => {
     <div className="SiteHeader">
       <div className="SiteHeader-intro">
         <p>
-          <a href="https://github.com/mdecrocemovson">
-            <FontAwesomeIcon className="SiteHeader-icon" icon={faGithub} />
+          <a
+            className="SiteHeader-left"
+            href="https://github.com/mdecrocemovson"
+          >
+            <FontAwesomeIcon icon={faGithub} size="lg" />
           </a>
         </p>
         <h1 className="SiteHeader-text">Michael Decroce-Movson</h1>
         <p>
-          <a href="https://www.linkedin.com/in/michael-decroce-movson/">
-            <FontAwesomeIcon icon={faLinkedinIn} />
+          <a
+            className="SiteHeader-right"
+            href="https://www.linkedin.com/in/michael-decroce-movson/"
+          >
+            <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
           </a>
         </p>
       </div>

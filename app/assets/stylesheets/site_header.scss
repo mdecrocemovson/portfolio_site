@@ -1,23 +1,36 @@
-
 .SiteHeader {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  background-color: #222629;
+  &-intro {
     display: flex;
-    flex-direction: column;
-    padding: 20px;
     justify-content: center;
-    background-color: #222629;
+    align-items: center;
+  }
+  a {
+    color: white;
+  }
+  &-right {
+    margin-left: 20px;
+  }
+  &-left {
+    margin-right: 20px;
+  }
 
-    &-text {
-        color: #85C134;
-        justify-content: center;
-        display: flex;
-    }
-    &-button {
-        background-color: #008CBA;
-        padding: 15px 32px;
-        color: white;
-    }
-    &-buttonContainer {
-        justify-content: center;
-        display: flex;
-    }
+  &-text {
+    color: #85c134;
+    justify-content: center;
+    display: flex;
+  }
+  &-button {
+    background-color: #008cba;
+    padding: 15px 32px;
+    color: white;
+  }
+  &-buttonContainer {
+    justify-content: center;
+    display: flex;
+  }
 }
