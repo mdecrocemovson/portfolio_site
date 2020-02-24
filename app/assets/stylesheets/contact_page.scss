@@ -1,55 +1,52 @@
 .ContactPage {
+  display: flex;
+  flex-direction: column;
+  background-color: #474b4f;
+  color: white;
+  padding: 24px 150px;
+  &-label {
+    color: white;
+    font-family: 'Roboto';
+  }
+  &-form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  &-intro {
+    text-align: center;
+  }
+
+  &-firstInputs {
     display: flex;
     flex-direction: column;
-    background-color: #474B4F;
+    flex-wrap: wrap;
+    width: 50%;
+    min-width: 150px;
+    margin-right: 12px;
+  }
+  &-messageInput {
+    display: flex;
+    width: 50%;
+    min-width: 150px;
+  }
+
+  &-input {
+    width: 100%;
+    padding: 1em;
+    margin-top: 1em;
+  }
+  &-submit {
+    background: #86ac97;
     color: white;
-    padding: 24px 150px;
-    &-label {
-        color: white;
-        font-family: 'Roboto', ;
-    }
-    &-form {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-    &-intro {
-        text-align: center;
-    }
-
-    &-firstInputs {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 50%;
-        min-width: 150px;
-        margin-right: 12px;
-    }
-    &-messageInput {
-        display: flex;
-        width: 50%;
-        min-width: 150px;
-    }
-
-    &-input {
-        width: 100%;
-        padding: 1em;
-        margin-top: 1em;
-    }
-
-
-    &-submit {
-        background: #86AC97;
-        color: white;
-        width: 100%;
-        min-width: 300px;
-        height: 30px;
-        
-    }
-    input::placeholder {
-        opacity: 1;
-    }
-    textarea {
-        height: 150px;
-    }
+    width: 100%;
+    min-width: 300px;
+    height: 30px;
+  }
+  input::placeholder {
+    opacity: 1;
+  }
+  textarea {
+    height: 150px;
+  }
 }

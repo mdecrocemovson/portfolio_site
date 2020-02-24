@@ -4,6 +4,7 @@ import SiteExplanation from './site_explanation';
 import ContactPage from './contact_page';
 import Timeline from './timeline';
 import MySkills from './my_skills';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const App = () => {
   return (
