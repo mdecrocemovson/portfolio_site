@@ -3,12 +3,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import Image from 'react-bootstrap/Image';
+
+import iceland from '../../../assets/images/iceland.jpg';
 
 library.add(faEnvelope, faGithub, faGithub);
 
 const SiteHeader = () => {
   return (
     <div className="SiteHeader">
+      <div className="SiteHeader-imageContainer">
+        <Image width={250} alt="iceland" roundedCircle src={iceland} />
+      </div>
       <div className="SiteHeader-intro">
         <p>
           <a

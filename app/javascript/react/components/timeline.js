@@ -13,10 +13,10 @@ library.add(faGraduationCap, faUserTie, faRocket, faStore);
 
 const Timeline = () => {
   return (
-    <div className="Timeline">
+    <div className="Timeline" id="mytimeline">
       <div className="container">
         <div className="page-header">
-          <h3 id="timeline-header" className="text-primary">
+          <h3 id="timeline-header">
             A timeline of my coding journey
           </h3>
         </div>
@@ -40,10 +40,7 @@ const Timeline = () => {
           </li>
           <li className="timeline-inverted">
             <div className="timeline-badge success">
-              <FontAwesomeIcon
-                className="SiteHeader-icon"
-                icon="user-tie"
-              />
+              <FontAwesomeIcon className="SiteHeader-icon" icon="user-tie" />
             </div>
             <div className="timeline-panel">
               <div className="timeline-heading">
@@ -73,7 +70,7 @@ const Timeline = () => {
           </li>
           <li className="timeline-inverted">
             <div className="timeline-badge warning">
-            <FontAwesomeIcon className="SiteHeader-icon" icon="store" />
+              <FontAwesomeIcon className="SiteHeader-icon" icon="store" />
             </div>
             <div className="timeline-panel">
               <div className="timeline-heading">

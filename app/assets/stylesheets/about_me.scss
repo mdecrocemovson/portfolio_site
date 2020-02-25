@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lacquer&display=swap');
+
+.AboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #474B4F;
+    padding: 100px;
+    font-family: 'Roboto', ;
+    align-items: center;
+
+
+    &-title {
+        padding-top: 16px;
+        justify-content: center;
+        display: flex;
+        font-size: 54px;
+        font-family: 'Nunito', ;
+        color: #FFFFFF;
+
+    }
+    &-blurb {
+        justify-content: center;
+        display: flex;
+        padding: 24px 50px;
+        color: #FFFFFF;
+        margin-bottom: 0px;
+        font-size: 20px;
+    }
+}
