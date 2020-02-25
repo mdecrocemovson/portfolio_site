@@ -16,23 +16,16 @@ const SiteHeader = () => {
         <Image width={250} alt="iceland" roundedCircle src={iceland} />
       </div>
       <div className="SiteHeader-intro">
-        <p>
-          <a
-            className="SiteHeader-left"
-            href="https://github.com/mdecrocemovson"
-          >
-            <FontAwesomeIcon icon={faGithub} size="lg" />
-          </a>
-        </p>
+        <a className="SiteHeader-left" href="https://github.com/mdecrocemovson">
+          <FontAwesomeIcon icon={faGithub} size="lg" />
+        </a>
         <h1 className="SiteHeader-text">Michael Decroce-Movson</h1>
-        <p>
-          <a
-            className="SiteHeader-right"
-            href="https://www.linkedin.com/in/michael-decroce-movson/"
-          >
-            <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
-          </a>
-        </p>
+        <a
+          className="SiteHeader-right"
+          href="https://www.linkedin.com/in/michael-decroce-movson/"
+        >
+          <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
+        </a>
       </div>
       <div className="SiteHeader-buttonContainer">
         <a href="mailto:mdecrocemovson@gmail.com">
