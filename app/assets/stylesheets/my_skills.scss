@@ -6,7 +6,9 @@
   margin-bottom: 0px;
   text-align: center;
   padding: 12px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', ;
+  padding: 100px 100px 0px 100px;
+
   &-row {
     display: flex;
     flex-direction: row;
@@ -18,7 +20,8 @@
     height: 35px;
     background-color: #86AC97;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+
   }
   &-frontend {
     display: flex;

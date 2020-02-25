@@ -5,7 +5,7 @@ const MySkills = () => {
   const [isOpen, setIsOpen] = useState(false);
   const buttonText = isOpen ? 'Hide my skills!' : 'See my skills!';
   return (
-    <div className="MySkills">
+    <div className="MySkills" id="myskills">
       <button
         className="MySkills-button"
         type="button"
