@@ -20,6 +20,7 @@
     "@fortawesome/react-fontawesome": "^0.1.8",
     "@rails/webpacker": "3.5",
     "babel-loader": "^8.0.6",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "bootstrap": "^4.4.1",
     "emailjs-com": "^2.4.1",
     "prop-types": "~15.6.0",
@@ -45,7 +46,7 @@
     "fetch-mock": "~5.13.1",
     "jest": "^24.9.0",
     "prettier": "^1.19.1",
-    "webpack-cli": "^2.0.10",
+    "webpack-cli": "^2.1.5",
     "webpack-dev-server": "^2.11.1"
   },
   "scripts": {
