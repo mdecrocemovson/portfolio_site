@@ -7,38 +7,42 @@
   padding: 20px;
   height: 675px;
   justify-content: center;
-  background-color: #222629;
   &-intro {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  a {
-    color: white;
-  }
   &-right {
     margin-left: 20px;
+    color: #B953FF;
   }
   &-left {
     margin-right: 20px;
+    color: #B953FF;
   }
 
   &-text {
-    color: #86AC97;
+    color: white;
     font-family: 'Nunito', ;
     font-weight: bold;
     justify-content: center;
     display: flex;
   }
   &-button {
-    background-color: #008cba;
+    background-color:black;
+    border: 0.1em solid black;
     padding: 15px 32px;
-    color: white;
+    color: #11CC9E;
+    font-size: 24px;
+    font-weight: 900;
   }
   &-buttonContainer {
     justify-content: center;
     display: flex;
     font-family: 'Roboto', ;
+  }
+  &-link {
+    color: #11CC9E;
   }
 
   &-imageContainer {

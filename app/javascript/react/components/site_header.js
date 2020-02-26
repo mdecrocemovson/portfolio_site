@@ -4,6 +4,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import Image from 'react-bootstrap/Image';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import iceland from '../../../assets/images/iceland.jpg';
 
@@ -27,14 +28,20 @@ const SiteHeader = () => {
           <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
         </a>
       </div>
-      <div className="SiteHeader-buttonContainer">
-        <a href="mailto:mdecrocemovson@gmail.com">
-          <button type="button" className="SiteHeader-button">
-            <FontAwesomeIcon className="SiteHeader-icon" icon="envelope" />{' '}
-            Contact me at mdecrocemovson@gmail.com
-          </button>
-        </a>
-      </div>
+      <ScrollAnimation animateIn="fadeIn">
+        <div className="SiteHeader-buttonContainer">
+          <p className="SiteHeader-button">
+            Contact me at
+            <a
+              href="mailto:mdecrocemovson@gmail.com"
+              className="SiteHeader-link"
+            >
+              {' '}
+              mdecrocemovson@gmail.com
+            </a>
+          </p>
+        </div>
+      </ScrollAnimation>
     </div>
   );
 };

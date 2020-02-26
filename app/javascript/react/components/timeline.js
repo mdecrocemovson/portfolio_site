@@ -8,6 +8,7 @@ import {
   faRocket,
   faStore,
 } from '@fortawesome/free-solid-svg-icons';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 library.add(faGraduationCap, faUserTie, faRocket, faStore);
 
@@ -16,9 +17,11 @@ const Timeline = () => {
     <div className="Timeline" id="mytimeline">
       <div className="container">
         <div className="page-header">
-          <h3 id="timeline-header">
-            A timeline of my coding journey
-          </h3>
+          <ScrollAnimation animateIn="fadeInDown">
+            <h3 id="timeline-header">
+              A timeline of my coding journey
+            </h3>
+          </ScrollAnimation>
         </div>
         <ul className="timeline">
           <li>

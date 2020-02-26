@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 .MySkills {
-  background-color: #222629;
   color: white;
   margin-bottom: 0px;
   text-align: center;
   padding: 12px;
   font-family: 'Roboto', ;
-  padding: 100px 100px 0px 100px;
+  padding: 100px 100px 100px 100px;
 
   &-row {
     display: flex;
@@ -18,8 +17,11 @@
     border-radius: 5px;
     width: 30%;
     height: 35px;
-    background-color: #86AC97;
-    color: white;
+    background-color:black;
+    border: 0.1em solid black;
+    color: #11CC9E;
+    font-size: 24px;
+    font-weight: 900;
     margin-bottom: 50px;
 
   }

@@ -1,28 +1,41 @@
 import React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
 
 const NavBar = () => {
   return (
     <div className="NavBar">
-      <Navbar sticky="top" bg="dark" variant="dark">
-        <Navbar.Brand href="#home">
-          <img
-            alt=""
-            src="/logo.svg"
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-          />{' '}
-          Michael Decroce-Movson
-        </Navbar.Brand>
-        <div className="NavBar-links">
-          <Nav.Link href="#aboutme">About me</Nav.Link>
-          <Nav.Link href="#myskills">My Skills</Nav.Link>
-          <Nav.Link href="#mytimeline">My Timeline</Nav.Link>
-          <Nav.Link href="#contactme">Contact Me</Nav.Link>
+      <nav className="navbar sticky-top navbar-expand-lg navbar-dark">
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon" />
+        </button>
+        <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a className="navbar-brand">Michael Decroce-Movson</a>
+          <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li className="nav-item">
+              <a className="nav-link" href="#aboutme">
+                About Me
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#myskills">
+                My Skills
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#mytimeline">
+                My Timeline
+              </a>
+            </li>
+          </ul>
         </div>
-      </Navbar>
+      </nav>
     </div>
   );
 };

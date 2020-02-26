@@ -5,7 +5,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #474B4F;
     padding: 100px;
     font-family: 'Roboto', ;
     align-items: center;
@@ -17,7 +16,7 @@
         display: flex;
         font-size: 54px;
         font-family: 'Nunito', ;
-        color: #FFFFFF;
+        color: #B953FF;
 
     }
     &-blurb {
@@ -27,5 +26,8 @@
         color: #FFFFFF;
         margin-bottom: 0px;
         font-size: 20px;
+    }
+    &-role {
+        color: #4452fb;
     }
 }
