@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import ScrollAnimation from 'react-animate-on-scroll';
+import Swal from 'sweetalert2';
 
 const ContactPage = () => {
   const [firstName, setFirstName] = useState('');
@@ -25,13 +26,21 @@ const ContactPage = () => {
         'user_N3vEIPlISgo5zdl7eDmoh',
       )
       .then(result => {
-        debugger;
-      }),
-      error => {
-        debugger;
-      };
-    clearInputs();
-  };
+        Swal.fire({
+          title: 'Thanks!',
+          text: 'Thanks for your email. Ill be in contact soon.',
+          icon: 'success',
+        });
+        clearInputs();
+      })
+      .catch(error => {
+        Swal.fire({
+          title: 'Whoops!',
+          text: 'That didnt work. Please contact me at mdecrocemovson@gmail.com to chat further!.',
+          icon: 'error',
+        });
+      });
+  }
 
   return (
     <div data-aos="fade-up" className="ContactPage">

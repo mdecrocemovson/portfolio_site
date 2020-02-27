@@ -6,6 +6,10 @@
     flex-direction: column;
     justify-content: center;
     padding: 100px;
+    @media (max-width: 500px) {
+        padding:50px;
+        text-align: center;
+    }
     font-family: 'Roboto', ;
     align-items: center;
 
@@ -23,6 +27,9 @@
         justify-content: center;
         display: flex;
         padding: 24px 50px;
+        @media (max-width: 500px) {
+            padding:0px;
+        }
         color: #FFFFFF;
         margin-bottom: 0px;
         font-size: 20px;
