@@ -1,7 +1,6 @@
 .ContactPage {
   display: flex;
   flex-direction: column;
-  background-color: #474b4f;
   color: white;
   padding: 100px 100px 100px 100px;
   &-label {
@@ -15,6 +14,8 @@
   }
   &-intro {
     text-align: center;
+    margin-bottom: 20px;
+    color: #b953ff;
   }
 
   &-firstInputs {
@@ -37,16 +38,28 @@
     margin-top: 1em;
   }
   &-submit {
-    background: #86ac97;
-    color: white;
+    background-color: black;
+    border: 0.1em solid black;
+    color: #11cc9e;
+    font-size: 24px;
+    font-weight: 900;
     width: 100%;
     min-width: 300px;
     height: 30px;
   }
-  input::placeholder {
-    opacity: 1;
+  input.ContactPage-input {
+    background-color: #121212;
+    border: transparent;
+    color: white;
   }
   textarea {
     height: 150px;
+    background-color: #121212;
+    border: transparent;
+    color: white;
   }
+  textarea:focus {
+    background-color: #121212;
+  }
+
 }

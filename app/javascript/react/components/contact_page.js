@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const ContactPage = () => {
   const [firstName, setFirstName] = useState('');
@@ -8,21 +9,38 @@ const ContactPage = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const sendEmail = (e) => {
-    e.preventDefault()
-    emailjs.sendForm('gmail', 'template_UDbNQqJd', e.target, 'user_N3vEIPlISgo5zdl7eDmoh')
-    .then ((result) => {
-      debugger
-    }), (error) => {
-      debugger
-    }
-  }
+  const clearInputs = () => {
+    setFirstName('');
+    setLastName('');
+    setEmail('');
+    setMessage('');
+  };
+  const sendEmail = e => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        'gmail',
+        'template_UDbNQqJd',
+        e.target,
+        'user_N3vEIPlISgo5zdl7eDmoh',
+      )
+      .then(result => {
+        debugger;
+      }),
+      error => {
+        debugger;
+      };
+    clearInputs();
+  };
 
   return (
-    <div className="ContactPage">
-      <div className="ContactPage-intro">
-        <h3>Lets start a conversation!</h3>
-      </div>
+    <div data-aos="fade-up" className="ContactPage">
+      <ScrollAnimation animateIn="zoomIn">
+        <div className="ContactPage-intro">
+          <h3>Lets start a conversation!</h3>
+        </div>
+      </ScrollAnimation>
+
       <form onSubmit={sendEmail}>
         <div className="ContactPage-form">
           <div className="ContactPage-firstInputs">
@@ -44,6 +62,7 @@ const ContactPage = () => {
             />
             <input
               placeholder="Email"
+              className="ContactPage-input"
               value={email}
               name="email"
               onChange={e => setEmail(e.target.value)}
