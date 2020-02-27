@@ -32,7 +32,8 @@
     "react-dom": "~16.8.0",
     "react-router-dom": "5.0.0",
     "react-transition-group": "^4.3.0",
-    "redbox-react": "1.6.0"
+    "redbox-react": "1.6.0",
+    "sweetalert2": "^9.8.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",

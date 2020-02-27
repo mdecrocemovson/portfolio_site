@@ -11,6 +11,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 500px) {
+      text-align: center;
+      padding: 20px;
+    }
   }
   &-right {
     margin-left: 20px;
@@ -27,11 +31,16 @@
     font-weight: bold;
     justify-content: center;
     display: flex;
+
   }
   &-button {
     background-color:black;
     border: 0.1em solid black;
     padding: 15px 32px;
+    @media (max-width: 500px) {
+      padding: 0px;
+      text-align: center;
+    }
     color: #11CC9E;
     font-size: 24px;
     font-weight: 900;

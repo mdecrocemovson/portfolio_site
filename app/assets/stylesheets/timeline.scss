@@ -1,13 +1,15 @@
 .Timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  padding: 100px;
+  @media (max-width: 500px) {
+    padding: 20px;
+  }
+
+  &-timeline-inner {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    color: #FFFFFF;
-    padding: 100px 100px 100px 100px;
-
-    &-timeline-inner {
-        display: flex;
-        justify-content: center;
-    }
-
+  }
 }
