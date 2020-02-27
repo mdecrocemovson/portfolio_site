@@ -31,12 +31,11 @@ const SiteHeader = () => {
       <ScrollAnimation animateIn="fadeIn">
         <div className="SiteHeader-buttonContainer">
           <p className="SiteHeader-button">
-            Contact me at
+            Contact me at{' '}
             <a
               href="mailto:mdecrocemovson@gmail.com"
               className="SiteHeader-link"
             >
-              {' '}
               mdecrocemovson@gmail.com
             </a>
           </p>

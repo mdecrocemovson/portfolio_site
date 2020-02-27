@@ -27,17 +27,17 @@ const MySkills = () => {
                 <p>Javascript (React.js)</p>
                 <p>Proficient</p>
               </div>
-              <ProgressBar variant="warning" animated now={90} />
+              <ProgressBar variant="info" animated now={90} />
               <div className="MySkills-skillAndDescription">
                 <p>CSS/SCSS</p>
                 <p>Advanced</p>
               </div>
-              <ProgressBar variant="warning" animated now={75} />
+              <ProgressBar variant="info" animated now={75} />
               <div className="MySkills-skillAndDescription">
                 <p>GraphQL</p>
                 <p>Intermediate</p>
               </div>
-              <ProgressBar variant="warning" animated now={65} />
+              <ProgressBar variant="info" animated now={65} />
             </div>
             <div className="MySkills-backend">
               <h4>Backend</h4>
@@ -45,17 +45,17 @@ const MySkills = () => {
                 <p>PHP</p>
                 <p>Proficient</p>
               </div>
-              <ProgressBar variant="warning" animated now={90} />
+              <ProgressBar variant="info" animated now={90} />
               <div className="MySkills-skillAndDescription">
                 <p>SQL</p>
                 <p>Proficient</p>
               </div>
-              <ProgressBar variant="warning" animated now={90} />
+              <ProgressBar variant="info" animated now={90} />
               <div className="MySkills-skillAndDescription">
                 <p>Ruby/Ruby on Rails</p>
                 <p>Intermediate</p>
               </div>
-              <ProgressBar variant="warning" animated now={65} />
+              <ProgressBar variant="info" animated now={65} />
             </div>
           </div>
         </div>

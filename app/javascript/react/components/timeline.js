@@ -36,9 +36,6 @@ const Timeline = () => {
                 <h4 className="timeline-title">Graduated from Union College</h4>
                 <h5> Mid 2017</h5>
               </div>
-              <div className="timeline-body">
-                <p>Blurb about what I studied at Union</p>
-              </div>
             </div>
           </li>
           <li className="timeline-inverted">
@@ -52,9 +49,6 @@ const Timeline = () => {
                 </h4>
                 <h5>Late 2017 - Early 2018</h5>
               </div>
-              <div className="timeline-body">
-                <p>Blurb about sales</p>
-              </div>
             </div>
           </li>
           <li>
@@ -65,9 +59,6 @@ const Timeline = () => {
               <div className="timeline-heading">
                 <h4 className="timeline-title">Started Launch Academy</h4>
                 <h5>Late 2018</h5>
-              </div>
-              <div className="timeline-body">
-                <p>Blurb about launch academy</p>
               </div>
             </div>
           </li>
@@ -81,9 +72,6 @@ const Timeline = () => {
                   Accepted a position as a Software Engineer at Wayfair
                 </h4>
                 <h5>Late 2018</h5>
-              </div>
-              <div className="timeline-body">
-                <p>Blurb about wayfair</p>
               </div>
             </div>
           </li>
